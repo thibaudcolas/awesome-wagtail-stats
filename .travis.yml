@@ -1,0 +1,25 @@
+language: node_js
+cache:
+  directories:
+  - node_modules
+install:
+- npm install
+script:
+- npm run test
+branches:
+  except:
+  - gh-pages
+deploy:
+  provider: pages
+  skip_cleanup: true
+  # Only deploy the subfolder, not the whole repository.
+  local_dir: build
+  # This value is stored below, encrypted with travis-encrypt.
+  github_token: "$GITHUB_TOKEN"
+  on:
+    branch: master
+notifications:
+  email: false
+env:
+  global:
+    secure: TODO
