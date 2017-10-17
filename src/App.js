@@ -26,20 +26,35 @@ class App extends Component {
         return (
             <div className="App">
                 <header className="App-header">
-                    <img src={logo} className="App-logo" alt="logo" />
-                    <h1 className="App-title">Welcome to React</h1>
+                    <h1 className="App-title">Awesome Wagtail stats</h1>
                 </header>
-                <p className="App-intro">
-                    To get started, edit <code>src/App.js</code> and save to
-                    reload.
-                </p>
                 {apps.length !== 0 && (
                     <table>
+                        <thead>
+                            <tr>
+                                <th>Package</th>
+                                <th>Python 3</th>
+                                <th>Pypi</th>
+                                <th>Description</th>
+                                <th>Category</th>
+                            </tr>
+                        </thead>
                         <tbody>
                             {apps.map((app, i) => (
                                 <tr key={i}>
-                                    <td>{app.name}</td>
-                                    <td>{app.supports_py3 ? 'Py3' : ':('}</td>
+                                    <td>
+                                        <a href={app.url}>{app.name}</a>
+                                    </td>
+                                    <td>{app.supports_py3 ? 'Yes!' : ':('}</td>
+                                    <td>
+                                        <a
+                                            href={`https://pypi.python.org/pypi/${app.pypi_package_name}`}
+                                        >
+                                            <code>{app.pypi_package_name}</code>
+                                        </a>
+                                    </td>
+                                    <td>{app.description}</td>
+                                    <td>{app.category}</td>
                                 </tr>
                             ))}
                         </tbody>
