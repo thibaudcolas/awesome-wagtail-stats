@@ -1,0 +1,2 @@
+requests == 2.18.4
+caniusepython3 == 5.0.0
