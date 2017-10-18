@@ -1,0 +1,152 @@
+{
+    "puput": {
+        "download_count": 1176
+    },
+    "wagtail_blog": {
+        "download_count": 3325
+    },
+    "wagtailnews": {
+        "download_count": 2290
+    },
+    "wagtail-blog-app": {
+        "download_count": 132
+    },
+    "django-wagtail-feeds": {
+        "download_count": 786
+    },
+    "wagtail-readability": {
+        "download_count": 0
+    },
+    "wagtailembedder": {
+        "download_count": 391
+    },
+    "wagtailtinymce": {
+        "download_count": 718
+    },
+    "wagtailfroala": {
+        "download_count": 335
+    },
+    "Django-wagtailmedium": {
+        "download_count": 74
+    },
+    "wagtailgmaps": {
+        "download_count": 1249
+    },
+    "wagtailgeowidget": {
+        "download_count": 1072
+    },
+    "wagtailfontawesome": {
+        "download_count": 1598
+    },
+    "wagtailcommonblocks": {
+        "download_count": 155
+    },
+    "wagtail_svgmap": {
+        "download_count": 0
+    },
+    "wagtailclearstream": {
+        "download_count": 60
+    },
+    "uwkm_streamfields": {
+        "download_count": 1383
+    },
+    "wagtail-inventory": {
+        "download_count": 439
+    },
+    "wagtail-bakery": {
+        "download_count": 161
+    },
+    "wagtail-constance": {
+        "download_count": 207
+    },
+    "wagtail-flags": {
+        "download_count": 640
+    },
+    "wagtailinvoices": {
+        "download_count": 379
+    },
+    "longclaw": {
+        "download_count": 448
+    },
+    "django-oscar-wagtail": {
+        "download_count": 863
+    },
+    "wagtail-metadata": {
+        "download_count": 748
+    },
+    "wagtail-metadata-mixin": {
+        "download_count": 397
+    },
+    "wagtail-schema.org": {
+        "download_count": 269
+    },
+    "wagalytics": {
+        "download_count": 409
+    },
+    "wagtail-experiments": {
+        "download_count": 132
+    },
+    "wagtail-personalisation": {
+        "download_count": 283
+    },
+    "wagtailenforcer": {
+        "download_count": 282
+    },
+    "wagtailmedia": {
+        "download_count": 523
+    },
+    "wagtail-embed-videos": {
+        "download_count": 692
+    },
+    "wagtailaltgenerator": {
+        "download_count": 490
+    },
+    "wagtaildocs_previews": {
+        "download_count": 104
+    },
+    "wagtail-modeltranslation": {
+        "download_count": 952
+    },
+    "wagtailtrans": {
+        "download_count": 1101
+    },
+    "wagtailpolls": {
+        "download_count": 211
+    },
+    "wagtailsurveys": {
+        "download_count": 314
+    },
+    "wagtail-django-recaptcha": {
+        "download_count": 1023
+    },
+    "wagtail-linkchecker": {
+        "download_count": 258
+    },
+    "wagtail-accessibility": {
+        "download_count": 347
+    },
+    "wagtail-factories": {
+        "download_count": 1511
+    },
+    "wagtailplus": {
+        "download_count": 412
+    },
+    "wagtailmenus": {
+        "download_count": 4887
+    },
+    "wagtailerrorpages": {
+        "download_count": 358
+    },
+    "wagtail-themes": {
+        "download_count": 175
+    },
+    "wagtail-sharing": {
+        "download_count": 341
+    },
+    "wagtail-pg-search-backend": {
+        "download_count": 506
+    },
+    "wagtailgridder": {
+        "download_count": 968
+    }
+}
