@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -8,6 +7,7 @@ class App extends Component {
 
         this.state = {
             apps: [],
+            pypinfo: {},
         };
     }
     componentDidMount() {
@@ -19,10 +19,19 @@ class App extends Component {
                     apps: data.apps,
                 });
             });
+
+        window
+            .fetch('/pypinfo.json')
+            .then(res => res.json())
+            .then(data => {
+                this.setState({
+                    pypinfo: data,
+                });
+            });
     }
 
     render() {
-        const { apps } = this.state;
+        const { apps, pypinfo } = this.state;
         return (
             <div className="App">
                 <header className="App-header">
@@ -35,6 +44,7 @@ class App extends Component {
                                 <th>Package</th>
                                 <th>Python 3</th>
                                 <th>Pypi</th>
+                                <th>Downloads</th>
                                 <th>Description</th>
                                 <th>Category</th>
                             </tr>
@@ -52,6 +62,12 @@ class App extends Component {
                                         >
                                             <code>{app.pypi_package_name}</code>
                                         </a>
+                                    </td>
+                                    <td>
+                                        {pypinfo[app.pypi_package_name]
+                                            ? pypinfo[app.pypi_package_name]
+                                                  .download_count
+                                            : null}
                                     </td>
                                     <td>{app.description}</td>
                                     <td>{app.category}</td>
