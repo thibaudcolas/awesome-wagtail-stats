@@ -32,6 +32,21 @@ class App extends Component {
 
     render() {
         const { apps, pypinfo } = this.state;
+        let rows;
+
+        if (Object.keys(pypinfo).length !== 0) {
+            rows = apps.sort((app, other) => {
+                if (pypinfo[app.pypi_package_name]) {
+                    return pypinfo[app.pypi_package_name].download_count >
+                        pypinfo[other.pypi_package_name].download_count
+                        ? -1
+                        : 1;
+                }
+            });
+        } else {
+            rows = apps;
+        }
+
         return (
             <div className="App">
                 <header className="App-header">
@@ -50,8 +65,8 @@ class App extends Component {
                             </tr>
                         </thead>
                         <tbody>
-                            {apps.map((app, i) => (
-                                <tr key={i}>
+                            {rows.map((app, i) => (
+                                <tr key={app.url}>
                                     <td>
                                         <a href={app.url}>{app.name}</a>
                                     </td>
