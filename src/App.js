@@ -12,7 +12,7 @@ class App extends Component {
     }
     componentDidMount() {
         window
-            .fetch('/data.json')
+            .fetch('data.json')
             .then(res => res.json())
             .then(data => {
                 this.setState({
@@ -21,7 +21,7 @@ class App extends Component {
             });
 
         window
-            .fetch('/pypinfo.json')
+            .fetch('pypinfo.json')
             .then(res => res.json())
             .then(data => {
                 this.setState({
