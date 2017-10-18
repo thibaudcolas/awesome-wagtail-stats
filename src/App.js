@@ -42,6 +42,8 @@ class App extends Component {
                         ? -1
                         : 1;
                 }
+
+                return app.category.localeCompare(other.category);
             });
         } else {
             rows = apps;
