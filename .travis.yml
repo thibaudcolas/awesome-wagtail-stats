@@ -12,9 +12,7 @@ branches:
 deploy:
   provider: pages
   skip_cleanup: true
-  # Only deploy the subfolder, not the whole repository.
   local_dir: build
-  # This value is stored below, encrypted with travis-encrypt.
   github_token: "$GITHUB_TOKEN"
   on:
     branch: master
@@ -22,4 +20,4 @@ notifications:
   email: false
 env:
   global:
-    secure: TODO
+    secure: KVuIPhmPf0xj/OFpMXKww+QY65EDDnyDfeoDfnWrph+RrKkUr0d0VUwWnI61/JtiPlERkbMCkkPMyR+tdCGSxS+A+qBnM6vhnoZpM6oi4mexLe9Xg18NxW2ppaSQmUnWagiyniZpfPSFRJTnpSLNfc4RwwgefaJMI228VAFefpRJ6UklGPdu6c+ZsM7LvBb/AbXP1IMYgd0TXiBfl655X4q87+7zDTZdlc65c2Q8IIkBODFp403s60FpC45hpiWq/WyPIqet7pLRXGNp0/F05rfRaTCTGTU154qSGgB1bhXuz81WK92bPUI7F8vxyubeKWutrSmQxR44Oy18D2kyfNnjp6SuRmpeot6C36v7CxE6YPQJ01/IUgvxMJUpfsqwzxJrH75q3qe6M9FuKLXF3Os+4OcOqkzVZk6oxkw1IfBwtPZrNx8TabpulOAyhil5QA9lvAiT18GEOl5jCVast5x9zcNNHsH4gDXjA7sU3l5cKFWZ//ElSQNCnW//YVrlFyDL+p/X6tDRsQKgYfuhPXY+IpqhkfnaI4qn85Ribcmfjt0naNdXxC7u9oJYvBU+TqSZsXT7AtHx7U/CEGbZLSgY9Y4hwFMTUxXq+V5f+a1kyPnBu8byL56H+I4fQNc5ZYpjUA7YGnAqyPrChtOZkfh5UDRQsL5TSqrVH9f7D7c=
