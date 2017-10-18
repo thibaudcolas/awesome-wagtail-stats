@@ -2,6 +2,7 @@
   "name": "awesome-wagtail-stats",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://thibaudcolas.github.io/awesome-wagtail-stats",
   "dependencies": {
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
