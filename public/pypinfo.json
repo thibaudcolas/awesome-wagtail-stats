@@ -1,155 +1,158 @@
 {
     "puput": {
-        "download_count": 1176
+        "download_count": 1153
     },
     "wagtail_blog": {
-        "download_count": 3325
+        "download_count": 3322
     },
     "wagtailnews": {
-        "download_count": 2290
+        "download_count": 2336
     },
     "wagtail-blog-app": {
-        "download_count": 132
+        "download_count": 129
     },
     "django-wagtail-feeds": {
-        "download_count": 786
+        "download_count": 899
     },
     "wagtail-readability": {
         "download_count": 0
     },
     "wagtailembedder": {
-        "download_count": 391
+        "download_count": 424
     },
     "wagtailtinymce": {
-        "download_count": 718
+        "download_count": 505
     },
     "wagtailfroala": {
-        "download_count": 335
+        "download_count": 287
     },
     "Django-wagtailmedium": {
-        "download_count": 74
+        "download_count": 72
+    },
+    "wagtaildraftail": {
+        "download_count": 652
     },
     "wagtailgmaps": {
-        "download_count": 1249
+        "download_count": 626
     },
     "wagtailgeowidget": {
-        "download_count": 1072
+        "download_count": 798
     },
     "wagtailfontawesome": {
-        "download_count": 1598
+        "download_count": 2864
     },
     "wagtailcommonblocks": {
-        "download_count": 155
-    },
-    "wagtail_svgmap": {
-        "download_count": 0
+        "download_count": 125
     },
     "wagtailclearstream": {
-        "download_count": 60
+        "download_count": 56
     },
     "uwkm_streamfields": {
-        "download_count": 1383
+        "download_count": 1255
     },
     "wagtail-inventory": {
-        "download_count": 439
+        "download_count": 245
     },
     "wagtail-bakery": {
-        "download_count": 161
+        "download_count": 187
     },
     "wagtail-constance": {
-        "download_count": 207
+        "download_count": 171
     },
     "wagtail-flags": {
-        "download_count": 640
+        "download_count": 783
     },
     "wagtailinvoices": {
-        "download_count": 379
+        "download_count": 376
     },
     "longclaw": {
-        "download_count": 448
+        "download_count": 420
     },
     "django-oscar-wagtail": {
-        "download_count": 863
+        "download_count": 958
     },
     "wagtail-metadata": {
-        "download_count": 748
+        "download_count": 1004
     },
     "wagtail-metadata-mixin": {
-        "download_count": 397
+        "download_count": 433
     },
     "wagtail-schema.org": {
-        "download_count": 269
-    },
-    "wagalytics": {
-        "download_count": 409
-    },
-    "wagtail-experiments": {
-        "download_count": 132
-    },
-    "wagtail-personalisation": {
         "download_count": 283
     },
+    "wagalytics": {
+        "download_count": 400
+    },
+    "wagtail-experiments": {
+        "download_count": 131
+    },
+    "wagtail-personalisation": {
+        "download_count": 308
+    },
     "wagtailenforcer": {
-        "download_count": 282
+        "download_count": 272
     },
     "wagtailmedia": {
-        "download_count": 523
+        "download_count": 421
     },
     "wagtail-embed-videos": {
-        "download_count": 692
+        "download_count": 668
     },
     "wagtailaltgenerator": {
-        "download_count": 490
+        "download_count": 450
     },
     "wagtaildocs_previews": {
-        "download_count": 104
+        "download_count": 113
     },
     "wagtail-modeltranslation": {
-        "download_count": 952
+        "download_count": 858
     },
     "wagtailtrans": {
-        "download_count": 1101
+        "download_count": 1683
     },
     "wagtailpolls": {
-        "download_count": 211
+        "download_count": 227
     },
     "wagtailsurveys": {
-        "download_count": 314
+        "download_count": 224
     },
     "wagtail-django-recaptcha": {
-        "download_count": 1023
+        "download_count": 709
+    },
+    "wagtailstreamforms": {
+        "download_count": 3594
     },
     "wagtail-linkchecker": {
-        "download_count": 258
+        "download_count": 234
     },
     "wagtail-accessibility": {
-        "download_count": 347
+        "download_count": 386
     },
     "wagtail-factories": {
-        "download_count": 1511
+        "download_count": 1289
     },
     "wagtailplus": {
-        "download_count": 412
+        "download_count": 408
     },
     "wagtailmenus": {
-        "download_count": 4887
+        "download_count": 6804
     },
     "wagtailerrorpages": {
-        "download_count": 358
+        "download_count": 352
     },
     "wagtail-themes": {
-        "download_count": 175
+        "download_count": 186
     },
     "wagtail-sharing": {
-        "download_count": 341
+        "download_count": 280
     },
     "wagtail-pg-search-backend": {
-        "download_count": 506
+        "download_count": 473
     },
     "wagtailgridder": {
-        "download_count": 968
+        "download_count": 970
     },
     "wagtail-condensedinlinepanel": {
-        "download_count": 889
+        "download_count": 549
     }
 }
