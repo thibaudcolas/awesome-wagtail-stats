@@ -9,4 +9,4 @@
 - http://py3readiness.org/
 - https://github.com/chhantyal/py3readiness
 - https://github.com/brettcannon/caniusepython3
-- https://raw.githubusercontent.com/springload/awesome-wagtail/master/README.md
+- https://springload.github.io/awesome-wagtail/api/v1/readme.json
