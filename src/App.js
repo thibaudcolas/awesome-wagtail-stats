@@ -32,19 +32,33 @@ class App extends Component {
 
     render() {
         const { apps, pypinfo } = this.state;
+        const hasPypinfo = Object.keys(pypinfo).length !== 0;
         let rows;
 
-        if (Object.keys(pypinfo).length !== 0) {
-            rows = apps.sort((app, other) => {
-                if (pypinfo[app.pypi_package_name]) {
-                    return pypinfo[app.pypi_package_name].download_count >
-                        pypinfo[other.pypi_package_name].download_count
-                        ? -1
-                        : 1;
-                }
+        if (hasPypinfo) {
+            rows = apps
+                .map(a => {
+                    return Object.assign({}, a, {
+                        downloads: pypinfo[a.pypi_package_name]
+                            ? pypinfo[a.pypi_package_name].download_count
+                            : null,
+                    });
+                })
+                .sort((app, other) => {
+                    const categorySort = app.category.localeCompare(
+                        other.category,
+                    );
 
-                return app.category.localeCompare(other.category);
-            });
+                    if (app.downloads !== null || other.downloads !== null) {
+                        if (other.downloads !== null) {
+                            return app.downloads > other.downloads ? -1 : 1;
+                        } else {
+                            return -1;
+                        }
+                    }
+
+                    return categorySort;
+                });
         } else {
             rows = apps;
         }
