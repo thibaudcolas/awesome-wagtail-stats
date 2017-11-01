@@ -7,7 +7,7 @@ class App extends Component {
 
         this.state = {
             apps: [],
-            pypinfo: {},
+            notes: {},
         };
     }
     componentDidMount() {
@@ -21,26 +21,26 @@ class App extends Component {
             });
 
         window
-            .fetch('pypinfo.json')
+            .fetch('notes.json')
             .then(res => res.json())
             .then(data => {
                 this.setState({
-                    pypinfo: data,
+                    notes: data,
                 });
             });
     }
 
     render() {
-        const { apps, pypinfo } = this.state;
-        const hasPypinfo = Object.keys(pypinfo).length !== 0;
+        const { apps, notes } = this.state;
+        const hasNotes = Object.keys(notes).length !== 0;
         let rows;
 
-        if (hasPypinfo) {
+        if (hasNotes) {
             rows = apps
                 .map(a => {
                     return Object.assign({}, a, {
-                        downloads: pypinfo[a.pypi_package_name]
-                            ? pypinfo[a.pypi_package_name].download_count
+                        downloads: notes[a.pypi_package_name]
+                            ? notes[a.pypi_package_name].download_count
                             : null,
                     });
                 })
@@ -68,15 +68,14 @@ class App extends Component {
                 <header className="App-header">
                     <h1 className="App-title">Awesome Wagtail stats</h1>
                 </header>
-                {apps.length !== 0 && (
+                {rows.length !== 0 && (
                     <table>
                         <thead>
                             <tr>
                                 <th>Package</th>
                                 <th>Python 3</th>
-                                <th>Pypi</th>
+                                <th>PyPI</th>
                                 <th>Downloads</th>
-                                <th>Category</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -85,21 +84,27 @@ class App extends Component {
                                     <td>
                                         <a href={app.url}>{app.name}</a>
                                     </td>
-                                    <td>{app.supports_py3 ? 'Yes!' : ':('}</td>
                                     <td>
-                                        <a
-                                            href={`https://pypi.python.org/pypi/${app.pypi_package_name}`}
-                                        >
-                                            <code>{app.pypi_package_name}</code>
-                                        </a>
+                                        {app.supports_py3 ? (
+                                            'Yes!'
+                                        ) : (
+                                            <span aria-label="No :(" role="img">
+                                                😡
+                                            </span>
+                                        )}
                                     </td>
                                     <td>
-                                        {pypinfo[app.pypi_package_name]
-                                            ? pypinfo[app.pypi_package_name]
-                                                  .download_count
-                                            : null}
+                                        {app.pypi_package_name && (
+                                            <a
+                                                href={`https://pypi.python.org/pypi/${app.pypi_package_name}`}
+                                            >
+                                                <code>
+                                                    {app.pypi_package_name}
+                                                </code>
+                                            </a>
+                                        )}
                                     </td>
-                                    <td>{app.category}</td>
+                                    <td>{app.downloads}</td>
                                 </tr>
                             ))}
                         </tbody>
