@@ -76,7 +76,6 @@ class App extends Component {
                                 <th>Python 3</th>
                                 <th>Pypi</th>
                                 <th>Downloads</th>
-                                <th>Description</th>
                                 <th>Category</th>
                             </tr>
                         </thead>
@@ -100,7 +99,6 @@ class App extends Component {
                                                   .download_count
                                             : null}
                                     </td>
-                                    <td>{app.description}</td>
                                     <td>{app.category}</td>
                                 </tr>
                             ))}
