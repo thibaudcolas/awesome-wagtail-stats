@@ -56,6 +56,8 @@
     },
     "uwkm_streamfields": {
         "download_count": 1255,
+        "supports_py3": true,
+        "notes": "Classifiers to be added by maintainers",
         "notes_link": "https://github.com/UWKM/uwkm_streamfields/issues/4"
     },
     "wagtail-inventory": {
