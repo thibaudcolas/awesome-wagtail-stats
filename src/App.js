@@ -37,24 +37,20 @@ class App extends Component {
 
         if (hasNotes) {
             rows = apps
-                .map(a => {
-                    return Object.assign({}, a, {
-                        downloads: notes[a.pypi_package_name]
-                            ? notes[a.pypi_package_name].download_count
-                            : null,
-                    });
-                })
+                .map(a => Object.assign({}, a, notes[a.pypi_package_name]))
                 .sort((app, other) => {
                     const categorySort = app.category.localeCompare(
                         other.category,
                     );
 
-                    if (app.downloads !== null || other.downloads !== null) {
-                        if (other.downloads !== null) {
-                            return app.downloads > other.downloads ? -1 : 1;
-                        } else {
-                            return -1;
-                        }
+                    if (app.download_count && other.download_count !== null) {
+                        return other.download_count > app.download_count
+                            ? 1
+                            : -1;
+                    } else if (app.download_count !== null) {
+                        return 1;
+                    } else if (other.download_count !== null) {
+                        return 1;
                     }
 
                     return categorySort;
@@ -75,7 +71,13 @@ class App extends Component {
                                 <th>Package</th>
                                 <th>Python 3</th>
                                 <th>PyPI</th>
-                                <th>Downloads</th>
+                                <th>
+                                    <abbr title="installs over the last 30 days, as reported by https://github.com/ofek/pypinfo">
+                                        Downloads
+                                    </abbr>
+                                </th>
+                                <th>Notes</th>
+                                <th>Link</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -104,7 +106,18 @@ class App extends Component {
                                             </a>
                                         )}
                                     </td>
-                                    <td>{app.downloads}</td>
+                                    <td>{app.download_count}</td>
+                                    <td>{app.notes}</td>
+                                    <td>
+                                        {app.notes_link && (
+                                            <a href={app.notes_link}>
+                                                {app.notes_link.replace(
+                                                    'https://github.com/',
+                                                    '',
+                                                )}
+                                            </a>
+                                        )}
+                                    </td>
                                 </tr>
                             ))}
                         </tbody>

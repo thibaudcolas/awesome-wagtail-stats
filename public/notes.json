@@ -36,10 +36,17 @@
         "download_count": 626
     },
     "wagtailgeowidget": {
-        "download_count": 798
+        "download_count": 798,
+        "supports_py3": true,
+        "notes": "PR to add classifier",
+        "notes_link": "https://github.com/Frojd/wagtail-geo-widget/pull/22"
     },
     "wagtailfontawesome": {
-        "download_count": 2864
+        "download_count": 2864,
+        "supports_py3": true,
+        "notes": "PR to add classifier",
+        "notes_link":
+            "https://github.com/alexgleason/wagtailfontawesome/pull/17"
     },
     "wagtailcommonblocks": {
         "download_count": 125
@@ -48,7 +55,8 @@
         "download_count": 56
     },
     "uwkm_streamfields": {
-        "download_count": 1255
+        "download_count": 1255,
+        "notes_link": "https://github.com/UWKM/uwkm_streamfields/issues/4"
     },
     "wagtail-inventory": {
         "download_count": 245
@@ -117,7 +125,11 @@
         "download_count": 224
     },
     "wagtail-django-recaptcha": {
-        "download_count": 709
+        "download_count": 709,
+        "supports_py3": true,
+        "notes": "PR to add classifier",
+        "notes_link":
+            "https://github.com/springload/wagtail-django-recaptcha/pull/6"
     },
     "wagtailstreamforms": {
         "download_count": 3594
