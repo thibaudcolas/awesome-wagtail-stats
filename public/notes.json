@@ -1,172 +1,24 @@
 {
-    "puput": {
-        "download_count": 1153
-    },
-    "wagtail_blog": {
-        "download_count": 3322
-    },
-    "wagtailnews": {
-        "download_count": 2336
-    },
-    "wagtail-blog-app": {
-        "download_count": 129
-    },
-    "django-wagtail-feeds": {
-        "download_count": 899
-    },
-    "wagtail-readability": {
-        "download_count": 0
-    },
-    "wagtailembedder": {
-        "download_count": 424
-    },
-    "wagtailtinymce": {
-        "download_count": 505
-    },
-    "wagtailfroala": {
-        "download_count": 287
-    },
-    "Django-wagtailmedium": {
-        "download_count": 72
-    },
-    "wagtaildraftail": {
-        "download_count": 652
-    },
-    "wagtailgmaps": {
-        "download_count": 626
-    },
     "wagtailgeowidget": {
-        "download_count": 798,
         "supports_py3": true,
         "notes": "PR to add classifier",
         "notes_link": "https://github.com/Frojd/wagtail-geo-widget/pull/22"
     },
     "wagtailfontawesome": {
-        "download_count": 2864,
         "supports_py3": true,
         "notes": "PR to add classifier",
         "notes_link":
             "https://github.com/alexgleason/wagtailfontawesome/pull/17"
     },
-    "wagtailcommonblocks": {
-        "download_count": 125
-    },
-    "wagtailclearstream": {
-        "download_count": 56
-    },
     "uwkm_streamfields": {
-        "download_count": 1255,
         "supports_py3": true,
         "notes": "Classifiers to be added by maintainers",
         "notes_link": "https://github.com/UWKM/uwkm_streamfields/issues/4"
     },
-    "wagtail-inventory": {
-        "download_count": 245
-    },
-    "wagtail-bakery": {
-        "download_count": 187
-    },
-    "wagtail-constance": {
-        "download_count": 171
-    },
-    "wagtail-flags": {
-        "download_count": 783
-    },
-    "wagtailinvoices": {
-        "download_count": 376
-    },
-    "longclaw": {
-        "download_count": 420
-    },
-    "django-oscar-wagtail": {
-        "download_count": 958
-    },
-    "wagtail-metadata": {
-        "download_count": 1004
-    },
-    "wagtail-metadata-mixin": {
-        "download_count": 433
-    },
-    "wagtail-schema.org": {
-        "download_count": 283
-    },
-    "wagalytics": {
-        "download_count": 400
-    },
-    "wagtail-experiments": {
-        "download_count": 131
-    },
-    "wagtail-personalisation": {
-        "download_count": 308
-    },
-    "wagtailenforcer": {
-        "download_count": 272
-    },
-    "wagtailmedia": {
-        "download_count": 421
-    },
-    "wagtail-embed-videos": {
-        "download_count": 668
-    },
-    "wagtailaltgenerator": {
-        "download_count": 450
-    },
-    "wagtaildocs_previews": {
-        "download_count": 113
-    },
-    "wagtail-modeltranslation": {
-        "download_count": 858
-    },
-    "wagtailtrans": {
-        "download_count": 1683
-    },
-    "wagtailpolls": {
-        "download_count": 227
-    },
-    "wagtailsurveys": {
-        "download_count": 224
-    },
     "wagtail-django-recaptcha": {
-        "download_count": 709,
         "supports_py3": true,
         "notes": "PR to add classifier",
         "notes_link":
             "https://github.com/springload/wagtail-django-recaptcha/pull/6"
-    },
-    "wagtailstreamforms": {
-        "download_count": 3594
-    },
-    "wagtail-linkchecker": {
-        "download_count": 234
-    },
-    "wagtail-accessibility": {
-        "download_count": 386
-    },
-    "wagtail-factories": {
-        "download_count": 1289
-    },
-    "wagtailplus": {
-        "download_count": 408
-    },
-    "wagtailmenus": {
-        "download_count": 6804
-    },
-    "wagtailerrorpages": {
-        "download_count": 352
-    },
-    "wagtail-themes": {
-        "download_count": 186
-    },
-    "wagtail-sharing": {
-        "download_count": 280
-    },
-    "wagtail-pg-search-backend": {
-        "download_count": 473
-    },
-    "wagtailgridder": {
-        "download_count": 970
-    },
-    "wagtail-condensedinlinepanel": {
-        "download_count": 549
     }
 }
