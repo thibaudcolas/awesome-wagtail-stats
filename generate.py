@@ -50,7 +50,7 @@ if __name__ == '__main__':
         else:
             app['supports_py3'] = False
 
-    with codecs.open('./public/data.js', 'w', 'utf-8') as file:
-        file.write("window.data = %s;" % json.dumps({
+    with codecs.open('./src/data.js', 'w', 'utf-8') as file:
+        file.write("export default %s;" % json.dumps({
             'apps': apps,
         }, indent=True))
