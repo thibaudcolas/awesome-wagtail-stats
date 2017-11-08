@@ -1,28 +1,71 @@
-.App {
-  text-align: center;
+:root {
+    --color-wagtail: #43b1b0;
+    --color-white: #ffffff;
+    --color-grey: #333333;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.App {
+    max-width: 960px;
+    margin: 10vh auto;
+    padding: 1rem;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+    text-align: center;
+    color: var(--color-white);
 }
 
 .App-title {
-  font-size: 1.5em;
+    margin-top: 0;
+    font-size: 4rem;
 }
 
-.App-intro {
-  font-size: large;
+.container {
+    padding: 2rem;
+    min-width: 480px;
+    background-color: var(--color-white);
+    color: var(--color-grey);
+    border-radius: 2px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.table {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.table td,
+.table th {
+    vertical-align: top;
+    min-width: 5rem;
+}
+
+.table th:first-child,
+.table td:first-child {
+    text-align: left;
+}
+
+.table th:last-child,
+.table td:last-child {
+    text-align: right;
+}
+
+.table tr > * {
+    padding-bottom: 0.5rem;
+}
+
+.container a {
+    border-bottom: 1px dotted var(--color-wagtail);
+}
+
+summary {
+    display: block;
+}
+
+::-webkit-details-marker {
+    display: none;
+}
+
+.summary-caret {
+    margin-left: 1rem;
+    font-size: 0.75em;
 }

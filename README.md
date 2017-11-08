@@ -4,9 +4,9 @@
 
 See it live at **[https://thibaudcolas.github.io/awesome-wagtail-stats](https://thibaudcolas.github.io/awesome-wagtail-stats)**
 
-## Why
+## What is this about?
 
-This project is a compilation of information from [Awesome Wagtail](https://github.com/springload/awesome-wagtail), [Can I Use Python 3?](https://github.com/brettcannon/caniusepython3), and [pypinfo](https://github.com/ofek/pypinfo) to determine the state of Wagtail's third-party plugins ecosystem with respect to Python 3 support.
+This is a compilation of information from [Awesome Wagtail](https://github.com/springload/awesome-wagtail), [Can I Use Python 3?](https://github.com/brettcannon/caniusepython3), and [pypinfo](https://github.com/ofek/pypinfo) to determine the state of Wagtail's third-party plugins ecosystem with respect to Python 3 support.
 
 Under the hood, it relies on:
 
