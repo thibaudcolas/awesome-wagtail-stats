@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+const getJSON = path => window.fetch(path).then(res => res.json());
+
 class App extends Component {
     constructor(props) {
         super(props);
@@ -11,23 +13,13 @@ class App extends Component {
         };
     }
     componentDidMount() {
-        window
-            .fetch('data.json')
-            .then(res => res.json())
-            .then(data => {
-                this.setState({
-                    apps: data.apps,
-                });
-            });
+        getJSON('data.json').then(data => {
+            const { apps } = data;
 
-        window
-            .fetch('notes.json')
-            .then(res => res.json())
-            .then(data => {
-                this.setState({
-                    notes: data,
-                });
-            });
+            this.setState(() => ({
+                apps: apps,
+            }));
+        });
     }
 
     render() {
