@@ -39,6 +39,10 @@
     min-width: 5rem;
 }
 
+.table th {
+    font-size: 1.25rem;
+}
+
 .table th:first-child,
 .table td:first-child {
     text-align: left;

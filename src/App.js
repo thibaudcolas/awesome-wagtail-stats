@@ -40,6 +40,24 @@ const App = ({ apps }) => {
                     determine the state of Wagtail's third-party plugins
                     ecosystem with respect to Python 3 support.
                 </p>
+                <h2>Contributing to this list</h2>
+                <p>
+                    Is a package missing? Add it to{' '}
+                    <a href="https://github.com/springload/awesome-wagtail/edit/master/README.md">
+                        Awesome Wagtail
+                    </a>{' '}
+                    and it will be reflected here shortly.
+                </p>
+                <p>
+                    Is Python 3 support info inaccurate? Update the package's{' '}
+                    <a href="https://github.com/alexgleason/wagtailfontawesome/pull/17">
+                        classifiers
+                    </a>, and-or{' '}
+                    <a href="https://github.com/thibaudcolas/awesome-wagtail-stats/edit/master/src/notes.js">
+                        add an override
+                    </a>{' '}
+                    in this list.
+                </p>
                 {rows.length !== 0 && (
                     <table className="table">
                         <thead>
