@@ -51,6 +51,6 @@ if __name__ == '__main__':
             app['supports_py3'] = False
 
     with codecs.open('./public/data.json', 'w', 'utf-8') as file:
-        file.write(json.dumps({
+        file.write("window.data = %s;" % json.dumps({
             'apps': apps,
         }, indent=True))

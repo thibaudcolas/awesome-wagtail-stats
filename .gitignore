@@ -94,4 +94,4 @@ lib64
 .env.test.local
 .env.production.local
 
-public/data.json
+public/data.js
