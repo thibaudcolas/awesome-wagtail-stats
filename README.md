@@ -19,3 +19,9 @@ Under the hood, it relies on:
 
 - http://py3readiness.org/
 - https://github.com/chhantyal/py3readiness
+
+## Documentation
+
+### Favicons
+
+Favicons generated with [Real Favicon Generator](https://realfavicongenerator.net/) from [`favicon.svg`](public/favicon.svg).
