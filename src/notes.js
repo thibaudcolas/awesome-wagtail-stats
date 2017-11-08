@@ -20,4 +20,10 @@ export default {
         notes_link:
             'https://github.com/springload/wagtail-django-recaptcha/pull/6',
     },
+    'wagtail-accessibility': {
+        supports_py3: true,
+        notes: 'PR to add classifier',
+        notes_link:
+            'https://github.com/takeflight/wagtail-accessibility/pull/7',
+    },
 };
