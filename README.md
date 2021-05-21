@@ -1,4 +1,4 @@
-## [Awesome Wagtail stats](https://thibaudcolas.github.io/awesome-wagtail-stats) [![Build Status](https://travis-ci.org/thibaudcolas/awesome-wagtail-stats.svg?branch=master)](https://travis-ci.org/thibaudcolas/awesome-wagtail-stats)
+## [Awesome Wagtail stats](https://thibaudcolas.github.io/awesome-wagtail-stats)
 
 > [Awesome Wagtail](https://github.com/springload/awesome-wagtail) package statistics
 
